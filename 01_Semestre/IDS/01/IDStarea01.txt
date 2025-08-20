@@ -1,0 +1,8 @@
+crear al1 Alien
+crear al2 Alien
+crear al3 Alien
+crear gato Cat
+
+al1.mirar(gato)
+al2.saludar(gato)
+al3.acariciar(gato)

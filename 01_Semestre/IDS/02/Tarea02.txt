@@ -1,0 +1,65 @@
+
+// Ejercicio 01
+public class E01{
+	public static void main(String[] arrgs){
+		System.out.println("Josue");
+		System.out.println("17");
+		System.out.println("jmadueno@unsa.edu.pe");
+	}
+}
+
+// Ejercicio 02
+public class E02{
+	public static void main(String[] args){
+		System.out.println("Nombre: Introducción al Desarrolo de Software");
+		System.out.println("Créditos: 5");
+		System.out.println("Horas semanales: 8");
+	}
+}
+
+// Ejercicio 03
+public class E03{
+	public static void main(String[] args){
+		System.out.println("Mi nombre es "+"Josue "+"Alexander "+"Madueño "+"Macedo");
+	}
+}
+
+// Ejercicio 04
+public class E04{
+	public static void main(String[] args){
+		System.out.println("El producto de 3 y 8 es "+3*8);
+		System.out.println("El resultado de 3x8+7 es "+(3*8+7));
+		System.out.println("El resultado de 7/3+3 es "+(float) 7/3 +3);
+	}
+}
+
+// Ejercicio 05
+public class E05{
+	public static void main(String[] args){
+		System.out.println("El área de un triangulo de base 2.53 y altura 7.12 es: " + 2.53*7.12/2);
+	}
+}
+
+# Ejercicio 1
+print('Juan')
+print('17')
+print('jmadueno@unsa.edu.pe')
+
+# Ejercicio 02
+print('Nombre: Introducción al Desarrollo de Software')
+print('Créditos: 5')
+print('Horas semanales: 8')
+
+# Ejercicio 03
+print('Mi nombre es '+'Josue '+'Alexander '+'Madueño '+'Macedo')
+
+# Alternativa
+print('Mi nombre es', 'Josue', 'Alexander', 'Madueño', 'Macedo')
+
+# Ejercicio 04
+print('El producto de 3 y 8 es', 3*8)
+print('El resultado de 3 x 8 + 7 es', 3*8+7)
+print('El resultado de 7/3 + 3 es', 7/3 + 3)
+
+# Ejercicio 05
+print('El área de un triangulo que tiene de base 2.53 y altura 7.12 es', 2.53*7.12/2)
