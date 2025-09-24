@@ -1,0 +1,4 @@
+<div id="menu">...</div>          No es una etiqueta semántica
+<section>...</section>            Es una etiqueta semántica
+<div id="footer">...</div>        No es una etiqueta semántica
+<header>...<header>               Es una etiqueta semántica

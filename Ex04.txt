@@ -1,0 +1,4 @@
+<header>Mi sitio web</header>
+<nav>Menú</nav>
+<main>Contenido</main>
+<footer>Pie de página</footer>
