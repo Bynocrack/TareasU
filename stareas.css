@@ -1,0 +1,30 @@
+ol li::before {
+   content: "==> ";
+}
+
+ol li:nth-child(odd) {
+   background-color: gray;
+}
+
+ol li:hover {
+   background-color: lightgray;
+}
+
+.echa::before {
+   content: " \\";
+}
+.echa::after {
+   content: "/";
+}
+
+body {
+   background-image: url("https://notitiacriminis.mx/wp-content/uploads/2024/11/220905-aca7-des-f1-prision-preventiva.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center center;
+}
+main, header{
+   background-color: #FFFFFFBB;
+   border-radius: 10px;
+}

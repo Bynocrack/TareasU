@@ -1,0 +1,47 @@
+main a:link {
+   color: green;
+   background-color: whitesmoke;
+}
+
+main a:visited {
+   color: purple;
+   background-color: gray;
+}
+
+main a:hover {
+   color: red;
+   background-color: black;
+}
+
+main a:active {
+   color: orange;
+   background-color: blue;
+}
+
+body {
+   background-color: #E7A94A;
+   color: #1856B5;
+}
+nav ul {
+   list-style-type: none;
+   color: darkred;
+   display: flex;
+   align-items: stretch;
+   justify-content: space-evenly;
+   padding: 0px;
+   margin: 0px;
+}
+nav ul li {
+   flex-grow: 1;
+   text-align: center;
+}
+nav ul a {
+   color: #1856B5;
+   padding-top: 15px;
+   display: block;
+   padding-bottom: 15px;
+   background: #F5F5F5;
+}
+nav ul a:hover {
+   background-color: #C4C4C4;
+}

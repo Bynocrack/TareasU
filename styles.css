@@ -37,3 +37,11 @@ p::first-letter {
    content: " <---";
    color: green;
 }
+
+body {
+   background-color: whitesmoke;
+}
+nav {
+   background-color: #EAE6CA;
+   color: #151935;
+}
