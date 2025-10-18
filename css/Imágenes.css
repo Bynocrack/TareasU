@@ -7,6 +7,7 @@
   height: 200px;
   text-align: center;
 }
+
 .tarjeta img {
   width: 100%;
   height: auto;
@@ -17,6 +18,12 @@
   margin-top: 0;
   font-size: 15pt;
 }
+
+#dragun img {
+  width: 80%;
+  height: auto;
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
