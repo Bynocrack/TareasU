@@ -7,15 +7,20 @@ form.addEventListener("submit", (e) => {
   let error = false;
   if (nombre.value == "") {
     let span = document.createElement("span");
+    let br = document.createElement("br");
     span.innerHTML = "Coloque su nombre!";
     span.style.color = "red";
-    form.appendChild(nombre, span);
+    nombre.insertAdjacentElement("afterend", span);
+    nombre.insertAdjacentElement("afterend", br);
     error = true;
   }
   if (correo.value == "") {
     let span = document.createElement("span");
+    let br = document.createElement("br");
     span.innerHTML = "Coloque su correo!";
-    form.appendChild(correo, span);
+    span.style.color = "red";
+    correo.insertAdjacentElement("afterend", span);
+    correo.insertAdjacentElement("afterend", br);
     error = true;
   }
   if (!error) {
