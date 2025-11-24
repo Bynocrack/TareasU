@@ -52,3 +52,76 @@ const ex06 = () => {
     console.log(e.message);
   }
 };
+
+const ex07 = () => {
+  try {
+    let x = null;
+    x.nombre;
+    console.log("listo");
+  } catch (e) {
+    if (e instanceof TypeError) {
+      console.log("Error de tipo ");
+    } else {
+      console.log("No es un error de tipo, pero es un error");
+    }
+  }
+};
+
+const ex08 = () => {
+  const dividir = (divisor) => {
+    try {
+      return dividendo / divisor;
+    } catch (e) {
+      console.log("Nivel 2 atrapó el error: " + e.message);
+      throw e;
+    }
+  };
+  const operadores = (func, a, b) => {
+    try {
+      let x = func(a);
+      return x;
+    } catch (e) {
+      console.log("Nivel 1 atrapó el error: " + e.message);
+      throw e;
+    }
+  };
+
+  try {
+    let resultado = operadores(dividir, 5, 10);
+    console.log(resultado);
+  } catch (e) {
+    console.log("ERROR FINAL capturado en el nivel superior: " + e.message);
+  }
+};
+
+const ex09 = () => {
+  const cargarMensaje = (func) => {
+    setTimeout(() => {
+      func("Mensaje cargado");
+    }, 1000);
+  };
+
+  const ortografia = (texto) => {
+    console.log(texto + ".");
+  };
+
+  cargarMensaje(ortografia);
+};
+
+const ex10 = () => {
+  const cargarUsuario = (func) => {
+    let tiempo = Math.trunc(Math.random() * 701) + 800;
+    let usuario = {
+      id: "US001",
+      nombre: "Josue",
+    };
+    setTimeout(() => {
+      func(usuario);
+    }, tiempo);
+  };
+  const imprimirUsuario = (usuario) => {
+    console.log(`Usuario Cargado: ${usuario.nombre} (ID:${usuario.id})`);
+  };
+
+  cargarUsuario(imprimirUsuario);
+};
