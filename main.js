@@ -125,3 +125,225 @@ const ex10 = () => {
 
   cargarUsuario(imprimirUsuario);
 };
+
+const ex11 = () => {
+  const dividirAsync = (a, b, func) => {
+    setTimeout(() => {
+      if (b === 0) {
+        func(new Error("No se puede dividir entre cero"), null);
+      } else {
+        func(null, a / b);
+      }
+    }, 1500);
+  };
+
+  const manejarErrores = (err, resultado) => {
+    if (err) {
+      console.log("Error: " + err.message);
+    } else {
+      console.log("Resultado: " + resultado);
+    }
+  };
+
+  dividirAsync(3, 0, manejarErrores);
+};
+
+const ex12 = () => {
+  const procesarLista = (arr, func) => {
+    let sinProcesar = arr.length;
+
+    for (let i of arr) {
+      let tiempo = Math.trunc(Math.random() * 1001) + 500;
+
+      setTimeout(() => {
+        console.log("Procesando " + i);
+        sinProcesar--;
+
+        if (sinProcesar == 0) {
+          func("Proceso completo");
+        }
+      }, tiempo);
+    }
+  };
+
+  const imprimir = (str) => {
+    console.log(str);
+  };
+
+  procesarLista([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], imprimir);
+};
+
+const ex13 = () => {
+  const cargarMensaje = () => {
+    console.log("Iniciando tarea");
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve("Mensaje cargado");
+      }, 1000);
+    });
+  };
+
+  const ortografia = (texto) => {
+    console.log(texto + ".");
+  };
+
+  cargarMensaje()
+    .then(ortografia)
+    .catch((error) => {
+      console.log("Error:", error);
+    });
+};
+
+const ex14 = () => {
+  const cargarUsuario = () => {
+    console.log("Iniciando tarea...");
+    return new Promise((resolve, reject) => {
+      let tiempo = Math.trunc(Math.random() * 701) + 800;
+      let usuario = {
+        id: "US001",
+        nombre: "Josue",
+      };
+      setTimeout(() => {
+        resolve(usuario);
+      }, tiempo);
+    });
+  };
+  const imprimirUsuario = (usuario) => {
+    console.log(`Usuario Cargado: ${usuario.nombre} (ID:${usuario.id})`);
+  };
+
+  cargarUsuario()
+    .then(imprimirUsuario)
+    .catch((e) => {
+      console.log("Error asd:", e);
+    });
+};
+
+const ex15 = () => {
+  const dividirAsync = (a, b) => {
+    console.log("Iniciando tarea...");
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (b === 0) {
+          reject(new Error("No se puede dividir entre cero"));
+        } else {
+          resolve(a / b);
+        }
+      }, 1500);
+    });
+  };
+
+  dividirAsync(3, 0)
+    .then((resultado) => {
+      console.log("Resultado:", resultado);
+    })
+    .catch((e) => console.log(e));
+};
+
+const ex16 = () => {
+  const procesarLista = (arr) => {
+    console.log("Iniciando tarea...");
+    return new Promise((resolve, reject) => {
+      let sinProcesar = arr.length;
+
+      for (let i of arr) {
+        let tiempo = Math.trunc(Math.random() * 1001) + 500;
+
+        setTimeout(() => {
+          console.log("Procesando " + i);
+          sinProcesar--;
+
+          if (sinProcesar == 0) {
+            resolve("Proceso completo");
+          }
+        }, tiempo);
+      }
+    });
+  };
+
+  const imprimir = (str) => {
+    console.log(str);
+  };
+
+  procesarLista([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+    .then(imprimir)
+    .catch((e) => {
+      console.log(e);
+    });
+};
+
+const ex17 = async () => {
+  console.log("Iniciando tarea...");
+
+  const resultado = await new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Mensaje cargado");
+    }, 1000);
+  });
+
+  console.log(resultado);
+};
+
+const ex18 = async () => {
+  console.log("Iniciando tarea...");
+
+  const resultado = await new Promise((resolve, reject) => {
+    let tiempo = Math.trunc(Math.random() * 701) + 800;
+    setTimeout(() => {
+      let usuario = {
+        id: "US001",
+        nombre: "Josue",
+      };
+      resolve(usuario);
+    }, tiempo);
+  });
+  console.log(`Usuario Cargado: ${resultado.nombre} (ID:${resultado.id})`);
+};
+
+const ex19 = () => {
+  const dividirAsync = async (a, b) => {
+    console.log("Iniciando tarea...");
+
+    const resultado = await new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (b === 0) {
+          reject("No se puede dividir entre 0");
+        }
+        resolve(a / b);
+      });
+    });
+
+    console.log(resultado);
+  };
+
+  dividirAsync(3, 0).catch((e) => {
+    console.log("Error:", e);
+  });
+};
+
+const ex20 = () => {
+  const procesarLista = async (arr) => {
+    console.log("Iniciando tarea...");
+
+    const resultado = await new Promise((resolve, reject) => {
+      let restantes = arr.length;
+      for (let i of arr) {
+        let tiempo = Math.trunc(Math.random() * 1001) + 500;
+        console.log("Procesando", i);
+        setTimeout(() => {
+          console.log(i, "procesado");
+          restantes--;
+          if (restantes == 0) {
+            resolve("Proceso completo");
+          }
+        }, tiempo);
+      }
+    });
+
+    console.log(resultado);
+  };
+
+  procesarLista([1, 2, 3, 4]).catch((e) => {
+    console.log("Error:", e);
+  });
+};
