@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+nav,
+footer {
+  text-align: center;
+  background-color: #111;
+  color: #eee;
+  min-height: 5vh;
+  justify-content: center;
+  align-items: stretch;
+}
+
+footer {
+  margin-top: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: #eee;
+  display: block;
+  padding: 1vh;
+}
+
+nav a:hover {
+  color: #111;
+  background-color: #eee;
+}
+
+.hero {
+  background-color: #3c3;
+  color: #fff;
+  text-align: center;
+  min-height: 40vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+main .flex * {
+  background-color: #aaa;
+  border-radius: 15px;
+  padding: 1vh;
+}
+
+.principal {
+  align-items: center;
+  justify-content: space-between;
+}
