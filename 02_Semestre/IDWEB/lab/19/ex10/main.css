@@ -1,0 +1,42 @@
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: #f5f7fb;
+    color: #111827;
+    margin: 0;
+    padding: 24px;
+}
+h1 { text-align: center; margin-bottom: 12px; }
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+.poke-img {
+    width: 96px;
+    height: 96px;
+    image-rendering: pixelated;
+    object-fit: contain;
+}
+.id {
+    font-weight: 600;
+    color: #6b7280;
+}
+.name {
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+#loading { text-align:center; margin-top:18px; }
