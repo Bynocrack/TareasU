@@ -1,0 +1,44 @@
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #ffb35c;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  background-color: #933;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  padding: 0;
+}
+
+header nav ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #ffb35c;
+  padding: 30px;
+}
+
+header nav ul li a:hover {
+  background-color: #ffb35c;
+  color: #933;
+}
+
+main {
+  display: flex;
+  gap: 16px;
+  padding: 15px;
+}

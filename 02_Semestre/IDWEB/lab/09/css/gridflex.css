@@ -1,0 +1,37 @@
+.tarjeta {
+  box-shadow: 3px;
+  padding: 9px;
+  background-color: #fff;
+  flex: 0 0 150px;
+  border-radius: 5px;
+  width: 150px;
+  height: 200px;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+}
+
+.tarjeta h3 {
+  font-size: 14px;
+}
+
+.tarjeta p {
+  font-size: 10pt;
+}
+
+#principal {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 16px;
+  width: 100%;
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 15px;
+}

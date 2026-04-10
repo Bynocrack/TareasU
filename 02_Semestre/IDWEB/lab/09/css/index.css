@@ -1,0 +1,73 @@
+body {
+  grid-template-rows: auto auto 1fr auto;
+}
+
+#hero-img {
+  padding: 15% 0px;
+  background-image: url("bgHero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero-text {
+  text-shadow: 0px 0px 8px #000000;
+  color: white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 8px 15px;
+}
+
+#hero-text button {
+  background-color: green;
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  box-shadow: 0px 0px 8px #88ff88;
+  color: #88ff88;
+}
+
+#hero-text button:active {
+  box-shadow: 0px 0px 8px #000000 inset;
+}
+
+main h2 {
+  color: white;
+  text-shadow: 0px 0px 8px white;
+  text-align: center;
+}
+
+.tarjeta {
+  color: #c3d4f3;
+  background: linear-gradient(180deg, #040a15, #0c1d3b);
+  border-radius: 15px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+
+.tarjeta a {
+  background-color: green;
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  box-shadow: 0px 0px 8px #88ff88;
+  color: #88ff88;
+  text-decoration: none;
+}
+
+.tarjeta a:active {
+  box-shadow: 0px 0px 8px #000000 inset;
+}
+
+main {
+  padding: 0;
+  flex-flow: column;
+}

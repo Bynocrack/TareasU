@@ -1,0 +1,34 @@
+.tarjeta {
+  box-shadow: 3px;
+  padding: 9px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 150px;
+  height: 200px;
+  text-align: center;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.tarjeta p {
+  margin-top: 0;
+  font-size: 15pt;
+}
+
+#dragun img {
+  width: 80%;
+  height: auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: space-around;
+  gap: 16px;
+  width: 100%;
+  flex: 3;
+}
