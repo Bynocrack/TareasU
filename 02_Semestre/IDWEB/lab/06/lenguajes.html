@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" >
+      <meta name="author" content="Josue Madueño">
+      <meta name="description" content="Descripcion">
+      <title>Lenguajes</title>
+   </head>
+   <body>
+      <header>
+	 <nav>
+	    <ul>
+	       <li><a href="index.html">Página inicio</a></li>
+	       <li><a href="registro.html">Registro</a></li>
+	       <li><a href="validacion.html">Validación</a></li>
+	       <li><a href="cursos.html">Cursos</a></li>
+	    </ul>
+	 </nav>
+      </header>
+      <main>
+	 <form action="#" method="post">
+	    <fieldset>
+	       <legend>Formulario de preferencias</legend>
+	       <img src="https://www.unsa.edu.pe/oucalidad/wp-content/themes/observatorio/img/unsa-logo.png" alt="Logo de la unsa" width=80><br>
+	       <label for="lenguajes">¿Que lenguajes de programación conoces?</label>
+	       <select name="lenguajes" multiple="multiple">
+		  <option value="HTML">HTML</option>
+		  <option value="CSS">CSS</option>
+		  <option value="javaScript">JavaScript</option>
+		  <option value="Python">Python</option>
+		  <option value="Java">Java</option>
+	       </select><br>
+	       <label for="horas">¿Cuantas horas de programacion estudias al día?</label>
+	       <input type="number" name="horas" required><br>
+	       <button type="submit">Guardar</button>
+	    </fieldset>
+	 </form>
+      </main>
+   </body>
+</html>

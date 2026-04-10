@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" >
+      <meta name="author" content="Josue Madueño">
+      <meta name="description" content="Descripcion">
+      <title>Validación</title>
+   </head>
+   <body>
+      <header>
+	 <nav>
+	    <ul>
+	       <li><a href="index.html">Página inicio</a></li>
+	       <li><a href="registro.html">Registro</a></li>
+	       <li><a href="lenguajes.html">Lenguajes</a></li>
+	       <li><a href="cursos.html">Cursos</a></li>
+	    </ul>
+	 </nav>
+      </header>
+      <main>
+	 <form action="#" method="post">
+	    <fieldset>
+	       <legend>Formulario con validaciones</legend>
+	       <label for="correo">Correo:</label>
+	       <input type="email" name"correo" required><br>
+	       <label for="contrasena">Contraseña:</label>
+	       <input type="password" name="contrasena" minlength="6" maxlength="12" placeholder="cree la contraseña" pattern="[a-zA-Z0-9]" required><br>
+	       <label for="contrasena2">Confirme su contraseña:</label>
+	       <input type="password" name="contrasena" minlength="6" maxlength="12" placeholder="la misma contraseña" pattern="[a-zA-Z0-9]"required><br>
+	       <button type="submit">Enviar</button>
+	    </fieldset>
+	 </form>
+      </main>
+   </body>
+</html>
