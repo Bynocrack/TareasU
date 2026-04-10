@@ -1,0 +1,47 @@
+h1 {
+   text-align: center;
+}
+
+p::first-line {
+   font-weight: bold;
+}
+
+p::first-letter {
+   font-size: 3em;
+   font-family: "Old English Text MT", "Goudy Old Style", serif;
+   float: left;
+   line-height: 0.5;
+   margin-right: 8px;
+   color: darkred;
+}
+
+::selection {
+   background: yellow;
+   color: red;
+}
+
+.servicios {
+   text-align: center;
+   font-size: 24px;
+   font-weight: bold;
+}
+
+/* Flecha antes del titulo */
+.servicios::before {
+   content: "---> ";
+   color: blue;
+}
+
+/* Flecha después del titulo */
+.servicios::after {
+   content: " <---";
+   color: green;
+}
+
+body {
+   background-color: whitesmoke;
+}
+nav {
+   background-color: #EAE6CA;
+   color: #151935;
+}
