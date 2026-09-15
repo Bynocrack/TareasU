@@ -1,0 +1,25 @@
+VG-001|The Legend of Zelda: Breath of the Wild|96
+VG-002|Super Mario Odyssey|97
+VG-003|God of War|94
+VG-004|Red Dead Redemption 2|97
+VG-005|Horizon Zero Dawn|89
+VG-006|Uncharted 4: A Thief's End|93
+VG-007|The Witcher 3: Wild Hunt|92
+VG-008|Sekiro: Shadows Die Twice|90
+VG-009|Elden Ring|96
+VG-010|Detroit: Become Human|78
+VG-011|Spiderman: Miles Morales|85
+VG-012|Ratchet & Clank: Rift Apart|88
+VG-013|Gran Turismo 7|87
+VG-014|Sackboy: A Big Adventure|79
+VG-015|Returnal|86
+VG-016|Demon's Souls|92
+VG-017|Ghost of Tsushima|83
+VG-018|Death Stranding|82
+VG-019|Days Gone|71
+VG-020|Resident Evil Village|84
+VG-021|Final Fantasy VII Remake|88
+VG-022|Persona 5|95
+VG-023|Bloodborne|92
+VG-024|Ghost of Tsushima: Director's Cut|86
+VG-025|Tales of Arise|87
